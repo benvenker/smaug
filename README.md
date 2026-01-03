@@ -98,6 +98,9 @@ npx smaug fetch --source likes
 # Fetch from both bookmarks AND likes
 npx smaug fetch --source both
 
+# Fetch from bookmark folders (repeat flag)
+npx smaug fetch --folder-id 123 --folder-id 456
+
 # Process already-fetched tweets
 npx smaug process
 

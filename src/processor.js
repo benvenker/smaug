@@ -83,6 +83,38 @@ export function fetchBookmarks(config, count = 10) {
   }
 }
 
+export function fetchBookmarksByFolderIds(config, count = 10, folderIds = []) {
+  if (!folderIds || folderIds.length === 0) {
+    return [];
+  }
+
+  const env = buildBirdEnv(config);
+  const birdCmd = config.birdPath || 'bird';
+  const combined = [];
+  const seen = new Set();
+
+  for (const folderId of folderIds) {
+    try {
+      const output = execSync(`${birdCmd} bookmarks --folder-id ${folderId} -n ${count} --json`, {
+        encoding: 'utf8',
+        timeout: 30000,
+        env
+      });
+      const items = JSON.parse(output);
+      for (const item of items) {
+        const id = item?.id?.toString();
+        if (!id || seen.has(id)) continue;
+        seen.add(id);
+        combined.push(item);
+      }
+    } catch (error) {
+      console.log(`  Failed to fetch folder ${folderId}: ${error.message}`);
+    }
+  }
+
+  return combined;
+}
+
 export function fetchLikes(config, count = 10) {
   try {
     const env = buildBirdEnv(config);
@@ -286,9 +318,19 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   const source = options.source || config.source || 'bookmarks';
   const includeMedia = options.includeMedia ?? config.includeMedia ?? false;
   const configWithOptions = { ...config, source, includeMedia };
+  const folderIds = options.folderIds || null;
 
-  console.log(`Fetching from source: ${source}${includeMedia ? ' (with media)' : ''}`);
-  const tweets = fetchFromSource(configWithOptions, options.count || 20);
+  let tweets;
+  if (folderIds && folderIds.length > 0) {
+    if (source !== 'bookmarks') {
+      console.log(`Folder IDs only apply to bookmarks; ignoring source "${source}".`);
+    }
+    console.log(`Fetching bookmarks from ${folderIds.length} folder(s)${includeMedia ? ' (with media)' : ''}`);
+    tweets = fetchBookmarksByFolderIds(configWithOptions, options.count || 20, folderIds);
+  } else {
+    console.log(`Fetching from source: ${source}${includeMedia ? ' (with media)' : ''}`);
+    tweets = fetchFromSource(configWithOptions, options.count || 20);
+  }
 
   if (!tweets || tweets.length === 0) {
     console.log(`No ${source} found`);
