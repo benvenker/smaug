@@ -8,6 +8,46 @@
 
 ---
 
+## @kyleanthony - Companies Should Brand Each Department
+> Companies should brand each department
+
+- **Tweet:** https://x.com/kyleanthony/status/2000551602957234199
+- **What:** Observation on organizational branding strategy, suggesting that individual departments should have their own distinct branding. Visual brainstorming/concept work.
+
+---
+
+## @kyleanthony - Design Work Latest
+> Design work lately
+
+- **Tweet:** https://x.com/kyleanthony/status/2000922682322554950
+- **What:** Latest design work showcase from Kyle Anthony Miller, featuring video documentation of current design projects and creative process.
+
+---
+
+## @kyleanthony - Brand Design Work in Progress
+> Brand design work in progress
+
+- **Tweet:** https://x.com/kyleanthony/status/2001276292516151447
+- **What:** Work-in-progress brand design updates from Kyle Anthony Miller. Shows iterative design refinements and visual exploration for branding projects.
+
+---
+
+## @kyleanthony - Mood Board Approved for New Project
+> Mood board approved for a new project
+
+- **Tweet:** https://x.com/kyleanthony/status/2001644853143441508
+- **What:** Mood board and creative direction approved for a new design project. Marks the beginning of a new creative endeavor with established visual foundation.
+
+---
+
+## @kyleanthony - Textures Design Exploration
+> Textures
+
+- **Tweet:** https://x.com/kyleanthony/status/2002018797117448393
+- **What:** Texture exploration and material studies as part of design work. Likely exploring surface treatments and tactile qualities for design projects.
+
+---
+
 ## @steipete - goplaces: Modern Google Places CLI in Go
 > new tool for the army: 📍 goplaces — Modern Google Places CLI in Go
 
@@ -622,3 +662,123 @@ it's live now do check it out and would appreciate your feedback https://t.co/DO
 - **Link:** https://www.3e8blueprint.com/
 - **Filed:** [3e8blueprint.md](./knowledge/tools/3e8blueprint.md)
 - **What:** 3E8 Blueprint is a new tool that streamlines the hardware development process from initial concept to manufacturing. It provides structure and workflows for makers and hardware entrepreneurs to move efficiently from idea to physical product.
+
+---
+
+## @kyleanthony - Textures
+> Textures https://t.co/d2dRchor0g
+
+- **Tweet:** https://x.com/kyleanthony/status/1995678932818165906
+- **What:** Design exploration focusing on texture applications and visual effects. Kyle's design iteration showing texture-based design elements.
+
+---
+
+## @kyleanthony - Robotic Spec Sheet Design
+> Robotic spec sheet design https://t.co/dPn0AL5DX0
+
+- **Tweet:** https://x.com/kyleanthony/status/1996200273237389530
+- **What:** Design work exploring robotic/technical aesthetics applied to spec sheet layouts. Industrial design inspiration for documentation interfaces.
+
+---
+
+## @kyleanthony - Nostalgic Design
+> Nostalgic design https://t.co/JSe2dyPxMn
+
+- **Tweet:** https://x.com/kyleanthony/status/1996927896925896764
+- **What:** Design exploration of nostalgic visual styles and retro aesthetic principles. Study in bringing vintage design sensibilities to modern interfaces.
+
+---
+
+## @kyleanthony - Vintage Spec Sheet Style
+> Loving this vintage spec sheet style https://t.co/a0BqIROlRu
+
+- **Tweet:** https://x.com/kyleanthony/status/1997299892780458291
+- **What:** Design appreciation and exploration of vintage specification sheet styling. Demonstrates blending retro typography and layout techniques with contemporary design practices.
+
+---
+
+## @kyleanthony - Sunday Morning Design Session
+> Sunday morning design session https://t.co/6z3AxJvjSv
+
+- **Tweet:** https://x.com/kyleanthony/status/1997656894941413809
+- **What:** Casual design work from a Sunday session. Likely capturing iterative design exploration and creative process documentation.
+
+---
+
+## @kyleanthony - Designing for the new industrial age
+> Designing for the new industrial age https://t.co/LyMm1PYydg
+
+- **Tweet:** https://x.com/kyleanthony/status/1992214056011198500
+- **What:** Kyle Anthony Miller shares a design-focused video on adapting to industrial-age design principles and contemporary manufacturing considerations.
+
+---
+
+## @kyleanthony - Tech spec typography design
+> Tech spec typography design https://t.co/pThD8TaLPc
+
+- **Tweet:** https://x.com/kyleanthony/status/1994028781883846687
+- **What:** Design exploration on typography specifications for technical documents and product materials.
+
+---
+
+## @kyleanthony - Saturday morning design session
+> Saturday morning design session https://t.co/NHzf8cTuGT
+
+- **Tweet:** https://x.com/kyleanthony/status/1994756488158695885
+- **What:** Casual design work session featuring design iterations and creative exploration from a Saturday morning.
+
+---
+
+## @kyleanthony - On a mission
+> On a mission https://t.co/vCUp19V3Yo
+
+- **Tweet:** https://x.com/kyleanthony/status/1995138045163769943
+- **What:** Short motivational video about pursuing design goals and staying committed to a project or vision.
+
+---
+
+## @kyleanthony - A little product animation goes a long way
+> A little product animation goes a long way https://t.co/5MbohDoDbN
+
+- **Tweet:** https://x.com/kyleanthony/status/1995484649745698831
+- **What:** Product design animation demonstration showing how subtle motion and micro-interactions enhance user experience and product appeal.
+
+---
+
+## @kyleanthony - Creating Stuff Design Inspiration
+> I just want to create more stuff like this
+
+- **Tweet:** https://x.com/kyleanthony/status/1990052836449882303
+- **What:** Design inspiration post showcasing creative visual work. Kyle sharing examples of creative pieces he wants to emulate. Design reference from November 16, 2025.
+
+---
+
+## @kyleanthony - Deployed for the New Industrial Age
+> Deployed for the new industrial age
+
+- **Tweet:** https://x.com/kyleanthony/status/1990414599380771121
+- **What:** Design and product deployment visuals exploring industrial aesthetics and modern manufacturing context. Creative visual post from November 17, 2025.
+
+---
+
+## @kyleanthony - Startup Apparel Design Exploration
+> Is your startup even real if it doesn't have sick apparel?
+
+- **Tweet:** https://x.com/kyleanthony/status/1990792044437287418
+- **What:** Humorous and thoughtful design post examining startup culture through the lens of branding and apparel. Visual showcase of clothing design work from November 18, 2025.
+
+---
+
+## @kyleanthony - Never Stop Creating
+> Never stop creating
+
+- **Tweet:** https://x.com/kyleanthony/status/1991500480917422167
+- **What:** Motivational design post emphasizing creative persistence and continuous creation. Visual inspiration piece from November 20, 2025.
+
+---
+
+## @kyleanthony - Texture Design Exploration
+> Textures
+
+- **Tweet:** https://x.com/kyleanthony/status/1991853953156624479
+- **What:** Focused texture design exploration showcasing material studies and tactile design elements. Visual design reference work from November 21, 2025.
