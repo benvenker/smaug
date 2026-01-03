@@ -1,3 +1,57 @@
+# Saturday, January 3, 2026
+
+## @AmericanDebunk - Scott Adams: The User Interface for Reality
+> Arguably Scott Adams' greatest livestream video ever- The User Interface for Reality.
+
+- **Tweet:** https://x.com/AmericanDebunk/status/2007143046438367397
+- **What:** Scott Adams livestream exploring the concept of reality's user interface, presented as one of his most notable videos.
+
+---
+
+## @steipete - goplaces: Modern Google Places CLI in Go
+> new tool for the army: 📍 goplaces — Modern Google Places CLI in Go
+
+- **Tweet:** https://x.com/steipete/status/2007180928700035446
+- **Link:** https://github.com/steipete/goplaces/
+- **Filed:** [goplaces](./knowledge/tools/goplaces.md)
+- **What:** Modern command-line tool for Google Places API access, written in Go. Enables querying locations and reviews from the command line with efficient performance. 21 GitHub stars.
+
+---
+
+## @doodlestein - Color-Coded SSH Sessions for Multi-Machine Work
+> Ghostty-themed SSH functions with color-coded terminals per machine...
+
+- **Tweet:** https://x.com/doodlestein/status/2007209683581362595
+- **What:** SSH configuration technique using Ghostty terminal theming to color-code connections to different machines. Saves time and mental energy when working across multiple servers.
+
+---
+
+## @doodlestein - UI/UX Polish Prompt for Claude Code
+> Here is an incredibly useful prompt to use with Claude Code and Opus 4.5 to improve the UI/UX of your web application... "I still think there are strong opportunities to enhance the UI/UX look and feel..."
+
+- **Tweet:** https://x.com/doodlestein/status/2007194101448573036
+- **What:** Prompt technique for using Claude Opus 4.5 with Claude Code to systematically improve web application UI/UX. Focus on iterative enhancement patterns.
+
+---
+
+## @adocomplete - Claude Code Headless Mode for CI/CD
+> Advent of Claude Day 7 - Headless Mode
+>
+> Want to use Claude Code in scripts, CI/CD, or automation?
+>
+> Just add -p:
+>
+> * claude -p "Fix the lint errors"
+> * claude -p "List all the functions " | grep "async"
+> * git diff | claude -p "Explain these changes"
+>
+> AI in your pipeline.
+
+- **Tweet:** https://x.com/adocomplete/status/1997746691680985502
+- **What:** Claude Code headless mode for automation and CI/CD integration. The -p flag enables piping input and scripting Claude Code operations, making AI available in development pipelines and automated workflows.
+
+---
+
 # Friday, January 2, 2026
 
 ## @parcadei - Continuous Claude v2 Context Management
@@ -399,3 +453,172 @@ it's live now do check it out and would appreciate your feedback https://t.co/DO
 
 - **Tweet:** https://x.com/donvito/status/2006743894147711370
 - **What:** Follow-up endorsement emphasizing the value proposition of GLM 4.7 at $3/month subscription rate. Reflects developer sentiment about the model's capabilities relative to pricing.
+
+---
+
+# Saturday, January 3, 2026
+
+## @pablostanley - Remotosh: Terminal Streaming to Phone
+
+> wanted to walk my dog without abandoning long builds on my terminal
+>
+> so I made https://www.remoto.sh/ ... scan a QR code and your terminal streams to your phone
+>
+> run: npx remotosh
+
+- **Tweet:** https://x.com/pablostanley/status/2007138985269964817
+- **Link:** https://www.remoto.sh/
+- **Filed:** [Remotosh](./knowledge/tools/remotosh.md)
+- **What:** Terminal streaming tool that lets you access your terminal on your phone via QR code. Perfect for monitoring long-running builds while away from your desk—built to solve the specific problem of needing to walk your dog while keeping an eye on terminal output.
+
+---
+
+## @prathamgrv - TensorTonic ML Math Interactive Learning
+
+> *Replying to @prathamgrv:* happy new year! we have released 10 more blogs today on math fundamentals and their interactive simulations - markov chains, law of large numbers, bayes theorem...
+>
+> read here: https://www.tensortonic.com/ml-math
+
+- **Tweet:** https://x.com/prathamgrv/status/2006649664918139142
+- **Parent:** https://x.com/prathamgrv/status/2006649515806454076
+- **Link:** https://www.tensortonic.com/ml-math
+- **Filed:** [TensorTonic ML Math](./knowledge/articles/tensortonic-ml-math.md)
+- **What:** TensorTonic released 10 new interactive blog posts covering essential ML math fundamentals: Markov chains, law of large numbers, Bayes' theorem, Chebyshev's inequality, probability distributions, random variables, and Monte Carlo methods. Interactive simulations help visualize these concepts.
+
+---
+
+## @prathamgrv - TensorTonic Math Fundamentals Release
+
+> happy new year! we have released 10 more blogs today on math fundamentals and their interactive simulations.
+>
+> markov chains, law of large numbers, bayes theorem, chevyshev's inequality, probability distributions, random variables, monte carlo
+
+- **Tweet:** https://x.com/prathamgrv/status/2006649515806454076
+- **Media:** Video demonstration
+- **What:** Announcement of TensorTonic's major release: 10 new interactive educational resources for machine learning mathematics, with simulations and visual explanations of core concepts. See bookmark 16 for the full link and details.
+
+---
+
+## @charliermarsh - ty Type Checker: Markdown-Based Test Suite
+
+> The ty test suite is "written" in Markdown. Every code block here gets evaluated, with the comments representing expectations.
+>
+> We have almost 300 of these files that effectively read as detailed documentation for how ty behaves.
+
+- **Tweet:** https://x.com/charliermarsh/status/1995497948768264414
+- **Media:** Code demonstration
+- **What:** Innovative testing approach for the ty type checker: test suites are written as Markdown files where code blocks are evaluated and comments verify expectations. ~300 files serve dual purpose as both tests and comprehensive documentation of the tool's behavior.
+
+---
+
+## @frankdegods - Just Fucking Cancel: AI Subscription Automation
+> *Replying to @frankdegods:* just mass cancelled $27k/year in subscriptions...
+>
+> it's usually more convenient to use existing apps than making your own, but for this specifically everything sucks and i don't trust any of these random apps with my data
+>
+> made a github for it, so you can run it locally
+>
+> https://github.com/rohunvora/just-fucking-cancel
+
+- **Tweet:** https://x.com/frankdegods/status/2007199491473191337
+- **Link:** https://github.com/rohunvora/just-fucking-cancel
+- **Filed:** [just-fucking-cancel](./knowledge/tools/just-fucking-cancel.md)
+- **What:** Claude Code skill that automates subscription cancellation by reading credit card statements, extracting subscriptions, asking follow-up questions, and automatically opening Chrome to cancel them. Frank used it to cancel $27k/year in subscriptions.
+
+---
+
+## @rvivek - Boris Cherny on Side Projects That Take Off
+> *Quoting @bcherny:* When I created Claude Code as a side project back in September 2024, I had no idea it would grow to be what it is today...
+>
+> Claude Code creator @bcherny on traits of side projects that take off
+>
+> > Start with automation — it's free leverage...
+
+- **Tweet:** https://x.com/rvivek/status/2006775235966816612
+- **Quoted:** https://x.com/bcherny/status/2006775235966816612
+- **What:** Boris Cherny discussing what makes side projects successful, using Claude Code as the primary example. Emphasis on automation as free leverage and building tools people actually need.
+
+---
+
+## @0xSero - GLM-4.7 Pruned and Quantized for Local Inference
+> *Quoting @0xSero:* Pruning has started. Wish me luck
+>
+> GLM-4.7 pruned 40% and quantized to intel-autoround W4A16 running successfully on my linux rig, 108GB for the weights...43.5 tokens per second on 8x 3090s...
+
+- **Tweet:** https://x.com/0xSero/status/2007052241623015486
+- **What:** Model optimization benchmark showing GLM-4.7 successfully pruned by 40% and quantized using W4A16, running on consumer hardware with impressive throughput (43.5 tokens/sec on 8x RTX 3090s) despite significant compression.
+
+---
+
+## @doodlestein - Power User Shell Aliases for Claude Code
+> *Replying to @kieranklaassen:* Straight from my ~/.zshrc file:
+>
+> alias cc='NODE_OPTIONS="--max-old-space-size=32768" ENABLE_BACKGROUND_TASKS=1 ~/.local/bin/claude --dangerously-skip-permissions'...
+
+- **Tweet:** https://x.com/doodlestein/status/2007205398592245933
+- **Parent:** https://x.com/kieranklaassen/status/2007205398592245933
+- **What:** Shell configuration tip for power users of Claude Code/Codex, allocating 32GB of Node memory and enabling background tasks to prevent interruptions.
+
+---
+
+## @omarsar0 - Maximizing Claude Code with Reusable Workflows
+> On maximizing Claude Code.
+>
+> Early on, I spent time building reusable workflows/patterns...Invest time building subagents, skills, commands, planning, MCP tools, context engineering patterns...
+
+- **Tweet:** https://x.com/omarsar0/status/2006390906371629222
+- **What:** Best practices for Claude Code productivity: investing time in building reusable components (subagents, skills, commands), effective planning, custom MCP tools, and context engineering patterns to maximize agent capabilities.
+
+---
+
+# Saturday, January 3, 2026
+
+## @PrimeIntellect - Recursive Language Models: Context Folding for Long-Horizon Agents
+> We believe the next breakthrough in long-horizon agents is training models to manage their own context.
+>
+> Introducing our new research direction on Recursive Language Models.
+
+- **Tweet:** https://x.com/PrimeIntellect/status/2006834561637036272
+- **Link:** https://www.primeintellect.ai/blog/rlm
+- **Filed:** [recursive-language-models.md](./knowledge/articles/recursive-language-models.md)
+- **What:** Prime Intellect introduces Recursive Language Models (RLM) as a research direction where models learn to manage their own context through context folding. This enables long-horizon agents to handle extremely long contexts by recursively compressing and reshaping context.
+
+---
+
+## @doodlestein - TanStack Adoption Prompt for Code Quality
+> If you're not familiar with TanStack, it's a set of really nice libraries...I usually start out doing things in vanilla NextJS 16, React 19, Tailwind...then do several rounds with this prompt...
+
+- **Tweet:** https://x.com/doodlestein/status/2007198158510797118
+- **What:** Jeffrey Emanuel shares a workflow tip about using TanStack libraries for code quality. He describes an iterative approach starting with vanilla tech stack, then refining with prompts - likely an AI-assisted workflow for upgrading and optimizing React code.
+
+---
+
+## @JacobColling - Claude Code + Obsidian Hybrid Interface
+> What if Claude Code and Obsidian had a baby?
+>
+> All the power of Claude Code, but in a friendly interface for non-technical users.
+
+- **Tweet:** https://x.com/JacobColling/status/2007217959421575506
+- **Media:** https://x.com/JacobColling/status/2007217959421575506/video/1
+- **What:** Concept visualization combining Claude Code's AI capabilities with Obsidian's knowledge management interface. Holiday hack project demonstrating agents, notes, todos, and poweruser features (cmd+k, wikilinks) built with Bun.
+
+---
+
+## @bcherny - Boris Cherny's Claude Code Setup
+> I'm Boris and I created Claude Code. Lots of people have asked how I use Claude Code, so I wanted to show off my setup a bit.
+>
+> My setup might be surprisingly vanilla!
+
+- **Tweet:** https://x.com/bcherny/status/2007179832300581177
+- **What:** Boris Cherny, the creator of Claude Code, shares his personal setup and workflow. Despite expectations for an exotic configuration, he uses a surprisingly straightforward, vanilla setup. Claude Code is intentionally designed to allow flexible customization based on individual preferences.
+
+---
+
+## @davidfeldt - 3E8 Blueprint - Idea to Hardware Tool
+> Introducing 3e8blueprint.
+> A tool for turning an Idea into hardware.
+
+- **Tweet:** https://x.com/davidfeldt/status/2006831430832418867
+- **Link:** https://www.3e8blueprint.com/
+- **Filed:** [3e8blueprint.md](./knowledge/tools/3e8blueprint.md)
+- **What:** 3E8 Blueprint is a new tool that streamlines the hardware development process from initial concept to manufacturing. It provides structure and workflows for makers and hardware entrepreneurs to move efficiently from idea to physical product.
