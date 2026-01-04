@@ -1,0 +1,13 @@
+{
+  "archiveFile": "./bookmarks.md",
+  "pendingFile": "./.state/pending-bookmarks.json",
+  "stateFile": "./.state/bookmarks-state.json",
+  "timezone": "America/Chicago",
+  "twitter": {
+    "authToken": "29b678f5c35ee9a1d6b115db65485030d46aee15",
+    "ct0": "5ba1bc8d6d28b8ac6c4110388e584780ac0913dcee388d6a0678576b70cb1c45cba4d02469261f4f0a054f6bf93b07a2c2b2027ecd4cc5b8af02cf03ff89d75a3c49181a9ceb90cb3dd7ef3180cc7228"
+  },
+  "autoInvokeClaude": true,
+  "claudeModel": "sonnet",
+  "includeMedia": true
+}

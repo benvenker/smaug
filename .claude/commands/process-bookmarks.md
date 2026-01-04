@@ -42,9 +42,9 @@ TodoWrite({ todos: [
 ```javascript
 // Send ONE message with multiple Task calls - they run in parallel
 // Use model="haiku" for cost-efficient parallel processing (~50% cost savings)
-Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 1: {json}")
-Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 2: {json}")
-Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 3: {json}")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 1: {json}\n\nReturn ONLY: final markdown entry + any filed path(s). No reasoning, no logs.")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 2: {json}\n\nReturn ONLY: final markdown entry + any filed path(s). No reasoning, no logs.")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 3: {json}\n\nReturn ONLY: final markdown entry + any filed path(s). No reasoning, no logs.")
 // ... all bookmarks in the SAME message
 ```
 
@@ -52,6 +52,7 @@ Task(subagent_type="general-purpose", model="haiku", prompt="Process bookmark 3:
 - Process 3+ bookmarks sequentially (one at a time)
 - Send Task calls in separate messages (defeats parallelism)
 - Skip parallel processing because "it seems simpler"
+- Paste full bookmark JSON into the chat
 
 ### Setup
 
@@ -104,10 +105,26 @@ Categories define how different bookmark types are handled. Each category has:
 
 ## Workflow
 
-### 1. Read the Prepared Data
+### 1. Read the Prepared Data (summary only)
+
+**DO NOT dump full JSON into the chat.** Use `jq` to summarize counts and IDs/URLs.
 
 ```bash
-cat ./.state/pending-bookmarks.json
+# count + a quick sanity preview (no full JSON)
+jq '{count, sample: (.bookmarks[:3] | map({id, author, tweetUrl, links: (.links|map(.expanded))}))}' ./.state/pending-bookmarks.json
+```
+
+If you need full data for processing, write batch files to disk and reference paths in the chat.
+
+```bash
+# Example: write batches to disk (adjust size as needed)
+mkdir -p ./.state/batches
+jq -c '.bookmarks' ./.state/pending-bookmarks.json \\
+  | jq -c '[_nwise(5)] | to_entries[] | {batch: (.key+1), bookmarks: .value}' \\
+  | while read -r batch; do
+      idx=$(jq -r '.batch' <<<"$batch");
+      jq -c '.bookmarks' <<<"$batch" > ./.state/batches/batch-$(printf "%02d" "$idx").json;
+    done
 ```
 
 ### 2. Process Bookmarks (Parallel for 3+)
@@ -121,6 +138,8 @@ Example: 20 bookmarks → spawn 4 subagents (5 each) in ONE message with multipl
 ```
 
 This is critical for performance. Do NOT process bookmarks sequentially when there are 3+.
+
+**Response size rule:** Subagents must return only the final markdown entry plus any filed path(s). No reasoning, no tool logs, no intermediate steps.
 
 For each bookmark (or batch):
 
@@ -380,6 +399,8 @@ Task 4: model="haiku", "Process bookmarks 16-20" with prompt containing bookmark
 
 Each subagent receives the full batch data and processes independently. They run in parallel.
 Using Haiku for subagents reduces cost ~50% while maintaining quality for categorization tasks.
+
+**Output size rule:** Subagents return only final markdown + filed paths. Keep orchestration terse ("spawned N workers", "merged N results").
 
 **DO NOT:**
 - Process bookmarks one at a time sequentially

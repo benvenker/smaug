@@ -224,6 +224,12 @@ async function main() {
       const specificIds = args.filter(a => a.match(/^\d{10,}$/));
       const force = args.includes('--force') || args.includes('-f');
       const includeMedia = args.includes('--media') || args.includes('-m');
+      const folderIds = [];
+      for (let i = 0; i < args.length; i++) {
+        if (args[i] === '--folder-id' && args[i + 1]) {
+          folderIds.push(args[i + 1]);
+        }
+      }
 
       // Parse --source flag
       const sourceIdx = args.findIndex(a => a === '--source' || a === '-s');
@@ -241,7 +247,8 @@ async function main() {
         specificIds: specificIds.length > 0 ? specificIds : null,
         force,
         source,
-        includeMedia
+        includeMedia,
+        folderIds: folderIds.length > 0 ? folderIds : null
       });
 
       if (result.count > 0) {
@@ -328,6 +335,7 @@ Commands:
   fetch --force  Re-fetch even if already archived
   fetch --source <source>  Fetch from: bookmarks, likes, or both
   fetch --media  EXPERIMENTAL: Include media attachments
+  fetch --folder-id <id>  Fetch bookmarks from a specific folder (repeatable)
   process        Show pending tweets
   status         Show current status
 
@@ -339,6 +347,7 @@ Examples:
   smaug fetch --source likes     # Fetch from likes only
   smaug fetch --source both      # Fetch from bookmarks AND likes
   smaug fetch --media            # Include photos/videos/GIFs (experimental)
+  smaug fetch --folder-id 123 --folder-id 456  # Fetch from bookmark folders
   smaug fetch --force            # Re-process archived tweets
 
 Config (smaug.config.json):
